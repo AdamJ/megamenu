@@ -3,7 +3,7 @@
   "title": "Megamenu Examples",
   "version": "0.0.1",
   "author": "Adam J. Jolicoeur",
-  "homepage": "https://www.adamjolicoeur.com/Megamenu",
+  "homepage": "https://www.adamjolicoeur.com/megamenu",
   "license": "none",
   "devDependencies": {
     "bootstrap": "3.3.7",
@@ -18,6 +18,6 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://mindreeper2420.github.com/Megamenu.git"
+    "url": "https://mindreeper2420.github.com/megamenu.git"
   }
 }
