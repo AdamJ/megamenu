@@ -70,6 +70,12 @@ gulp.task('browserSync', function () {
   })
 });
 
+// Copy vendor libraries from /node_modules into /vendor
+gulp.task('copy', function () {
+  gulp.src(['node_modules/font-awesome/**'])
+    .pipe(gulp.dest('fonts/font-awesome'))
+});
+
 // ensure js finishes, reload browser
 gulp.task('js-watch', ['minify-js'], function (done) {
   browserSync.reload();

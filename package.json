@@ -8,6 +8,7 @@
   "devDependencies": {
     "bootstrap": "3.3.7",
     "font-awesome": "4.7.0",
+    "patternfly": "3.41.0",
     "browser-sync": "^2.23.6",
     "gulp": "^3.9.1",
     "gulp-clean-css": "^3.9.2",
