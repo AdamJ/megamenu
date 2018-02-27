@@ -47,7 +47,7 @@ gulp.task('minify-css', ['sass'], function () {
 
 // Minify JS
 gulp.task('minify-js', function () {
-  return gulp.src('js/grayscale.js')
+  return gulp.src('js/site.js')
     .pipe(uglify())
     .pipe(header(banner, {
       pkg: pkg
@@ -97,7 +97,7 @@ gulp.task('serve', ['sass', 'minify-js'], function () {
   });
   gulp.watch('js/*.js', ['js-watch']);
   gulp.watch('sass/*.scss', ['sass-watch']);
-  gulp.watch('*.html').on('change', browserSync.reload);
+  gulp.watch('**/*.html').on('change', browserSync.reload);
 });
 
 // Run everything
