@@ -1,7 +1,32 @@
+@import "../node_modules/patternfly/dist/sass/patternfly/_color-variables.scss";
+
 @import "fonts";
 @import "nav";
 
 body {
   font-family: $font-family-base;
   font-size: $font-size-base;
+  overflow-x: hidden;
+}
+input {
+  height: 30px;
+}
+.input-group-addon_empty {
+  background-color: transparent;
+  border-color: transparent;
+}
+
+.form-control {
+  border-color: transparent;
+  border-radius: 0;
+  box-shadow: none;
+}
+
+input:active,
+input:focus,
+input:hover {
+  border-bottom-color: $color-pf-blue !important;
+}
+.fa-flask {
+  color: $color-pf-green;
 }

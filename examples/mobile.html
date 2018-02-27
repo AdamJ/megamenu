@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio for Adam J. Jolicoeur">
+    <meta name="author" content="Adam J. Jolicoeur">
+    <title>Mega Menu Demo</title>
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+      crossorigin="anonymous">
+    <!-- PatternFly Core -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/patternfly/3.41.0/css/patternfly.min.css">
+    <!-- Custom Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Overpass+Mono" rel="stylesheet">
+    <!-- Theme CSS -->
+    <link href="../css/site.css" rel="stylesheet">
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-default">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbarCollapse" aria-expanded="false">
+              <span class="sr-only">Toggle Navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+          </div>
+          <div class="navbar-collape" id="navbarCollapse">
+            <ul class="nav navbar-nav">
+              <li class="open">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                  Spaces <span class="caret"></span>
+                </a>
+                <ul class="dropdown-menu mega-menu">
+                  <ul class="col-sm-2 mega-menu--spaces-list">
+                    <li>
+                      <h3>Your Spaces</h3>
+                    </li>
+                    <li>
+                      <p>
+                        <i>
+                        You haven't created any Spaces yet.
+                        <br />
+                        Spaces allow you to set up collaboration for your projects with others.
+                        </i>
+                      </p>
+                    </li>
+                    <li class="mega-menu--spaces-list_create-space">
+                      <a href="#" class="btn btn-link">
+                        <span class="fa fa-plus-circle"></span> Create a space
+                      </a>
+                    </li>
+                  </ul>
+                  <ul class="col-sm-4 mega-menu--spaces-list">
+                    <li>
+                      <h3>Spaces you've recently visted</h3>
+                    </li>
+                    <li>
+                      <span class="fa fa-circle"></span> Mindreeper2420
+                      <div>
+                        Adam's Awesome App
+                      </div>
+                    </li>
+                  </ul>
+                  <ul class="col-sm-4 mega-menu--spaces-list">
+                    <li>
+                      <h3>Spaces you collaborate often on</h3>
+                    </li>
+                    <li>
+                      <p>
+                        <i>
+                          You can collaborate in other's spaces by being invited by the space owner.
+                        </i>
+                      </p>
+                      <form>
+                        <div class="form-group">
+                          <input type="search" placeholder="Find spaces to collaborate on">
+                        </div>
+                      </form>
+                    </li>
+                  </ul>
+                  <ul class="col-sm-2 mega-menu--spaces-list mega-menu--spaces-list_action-block">
+                    <li>
+                      <span class="fa fa-home fa-lg"></span> My Dashboard
+                    </li>
+                    <li>
+                      <span class="fa fa-plus-circle fa-lg"></span> Create new space
+                    </li>
+                    <li>
+                      <span class="fa fa-th-large fa-lg"></span> View more spaces
+                    </li>
+                  </ul>
+                </ul>
+              </li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+              <li class="mega-menu--search">
+                MyProjectName <span class="caret"></span>
+                <div>
+                  <input type="search" placeholder="type to search...">
+                </div>
+              </li>
+              <li>
+                <a href="#">
+                  <span class="fa fa-th fa-lg"></span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <span class="fa fa-bell fa-lg"></span>
+                </a>
+              </li>
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                  <span class="fa fa-user-circle fa-lg"></span> <span class="caret"></span>
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a href="#">Action></a>
+                  </li>
+                  <li role="separator" class="divider"></li>
+                  <li>
+                    <a href="#">Action></a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <section>
+    </section>
+    <footer>
+    </footer>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Bootstrap's JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+      crossorigin="anonymous"></script>
+    <!-- PatternFly's JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/patternfly/3.41.0/js/patternfly.min.js"></script>
+  </body>
+</html>
