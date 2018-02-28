@@ -1,3 +1,10 @@
+.navbar-default {
+  .navbar-nav>.open>a,
+  .navbar-nav>.open>a:focus,
+  .navbar-nav>.open>a:hover {
+    background-color: transparent;
+  }
+}
 .mega-menu {
   position: absolute;
   top: 66px;
@@ -12,6 +19,9 @@
     list-style: none;
     .btn-link {
       color: $color-pf-blue-400;
+      &:hover {
+        color: $color-pf-blue-400;
+      }
     }
     &_create-space {
       a {
@@ -49,6 +59,19 @@
         right: 15px;
       }
     }
+    &_action-item {
+      line-height: 2;
+    }
+    &_highlights {
+      transition: all .3s;
+    }
+    &_new-feature {
+      .mega-menu--spaces-empty-state {
+        img {
+          width: 50%;
+        }
+      }
+    }
     .active-item {
       color: $color-pf-blue;
       &:before {
@@ -79,6 +102,18 @@
           list-style: none;
         }
       }
+      .fa {
+        &:hover {
+          cursor: pointer;
+        }
+      }
+    }
+  }
+  &--spaces-empty-state {
+    text-align: center;
+    h3 {
+      color: $color-pf-green;
+      font-style: italic;
     }
   }
   &--search {

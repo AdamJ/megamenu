@@ -3,7 +3,9 @@ $("#mega-menu--dropdown").click(function() {
     // toggle the mega menu
   });
   $("#projectDetails").hide("fast", function () {
-    // show project details
+    // hide project details
+  });
+  $("#megaMenuBase").show("fast", function () {
   });
 });
 
@@ -22,4 +24,9 @@ $("#hideProjectDetails").click(function () {
   $("#projectDetails").hide("fast", function () {
     // show project details
   });
+});
+
+$("#toggleNewFeature").click(function () {
+  $("#newFeature").toggleClass("hide"); // remove the .hide class if applied
+  $("#recentHighlights").toggleClass("hide"); // add the .hide class to show the newFeature block
 });

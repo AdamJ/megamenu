@@ -2334,6 +2334,11 @@
   overflow: visible;
   clip: auto; }
 
+.navbar-default .navbar-nav > .open > a,
+.navbar-default .navbar-nav > .open > a:focus,
+.navbar-default .navbar-nav > .open > a:hover {
+  background-color: transparent; }
+
 .mega-menu {
   position: absolute;
   top: 66px;
@@ -2347,6 +2352,8 @@
     list-style: none; }
     .mega-menu--spaces-list .btn-link {
       color: #0088ce; }
+      .mega-menu--spaces-list .btn-link:hover {
+        color: #0088ce; }
     .mega-menu--spaces-list_create-space a {
       padding-left: 0; }
     .mega-menu--spaces-list_action-block {
@@ -2371,6 +2378,12 @@
         position: absolute;
         bottom: -50px;
         right: 15px; }
+    .mega-menu--spaces-list_action-item {
+      line-height: 2; }
+    .mega-menu--spaces-list_highlights {
+      transition: all .3s; }
+    .mega-menu--spaces-list_new-feature .mega-menu--spaces-empty-state img {
+      width: 50%; }
     .mega-menu--spaces-list .active-item {
       color: #0088ce; }
       .mega-menu--spaces-list .active-item:before {
@@ -2394,6 +2407,13 @@
       padding-left: 0; }
       .mega-menu--spaces-table_body ul li {
         list-style: none; }
+    .mega-menu--spaces-table_body .fa:hover {
+      cursor: pointer; }
+  .mega-menu--spaces-empty-state {
+    text-align: center; }
+    .mega-menu--spaces-empty-state h3 {
+      color: #3f9c35;
+      font-style: italic; }
   .mega-menu--search {
     margin-right: 15px;
     margin-left: 25px;
@@ -2412,26 +2432,62 @@
       top: 25px !important;
       left: 0 !important; }
 
+h1 {
+  font-size: 2em;
+  line-height: 1.3em; }
+
+h2 {
+  font-size: 1.5em;
+  line-height: 1.3em; }
+
+h3 {
+  font-size: 1.3em;
+  line-height: 1.3em; }
+
+h4 {
+  font-size: 1.2em;
+  line-height: 1.3em; }
+
+h5 {
+  font-size: 1.1em;
+  line-height: 1.3em; }
+
 body {
   font-family: "Overpass", sans-serif;
-  font-size: 16px;
+  font-size: 14px;
   overflow-x: hidden; }
 
-input {
-  height: 30px; }
+.dropdown-menu,
+.btn {
+  font-size: 14px !important; }
+
+a:hover {
+  text-decoration: none; }
 
 .input-group-addon_empty {
   background-color: transparent;
   border-color: transparent; }
 
+.animate {
+  transition: all .3s ease; }
+
 .form-control {
-  border-color: transparent;
+  border: 0;
+  border-bottom: 1px solid #fff;
   border-radius: 0;
-  box-shadow: none; }
+  box-shadow: none;
+  font-size: 1.2em; }
+  .form-control:focus {
+    border-bottom-color: #0088ce;
+    box-shadow: none; }
+
+input {
+  height: 30px; }
 
 input:active,
 input:focus,
 input:hover {
+  outline: none;
   border-bottom-color: #0088ce !important; }
 
 .fa-flask {
