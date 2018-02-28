@@ -6,10 +6,12 @@ cache:
 notifications:
   email: mindreeper2420@gmail.com
 
+sudo: enabled
+
 env:
   global:
     - COMMIT_AUTHOR_EMAIL: "mindreeper2420@gmail.com"
-    - TRIGGER_REPO_SLUG: "mindreeper2420/mindreeper2420.github.io"
+    - TRIGGER_REPO_SLUG: "mindreeper2420/megamenu.github.io"
     - TRIGGER_REPO_BRANCH: "master"
 
 before_script:
