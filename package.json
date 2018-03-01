@@ -5,10 +5,12 @@
   "author": "Adam J. Jolicoeur",
   "homepage": "https://www.adamjolicoeur.com/megamenu",
   "license": "none",
-  "devDependencies": {
+  "dependencies": {
     "bootstrap": "3.3.7",
     "font-awesome": "4.7.0",
-    "patternfly": "3.41.0",
+    "patternfly": "3.41.0"
+  },
+  "devDependencies": {
     "browser-sync": "^2.23.6",
     "gulp": "^3.9.1",
     "gulp-clean-css": "^3.9.2",
