@@ -1,0 +1,42 @@
+.form-control {
+  background-color: transparent;
+  border: 0;
+  border-bottom: 1px solid transparent;
+  border-radius: 0;
+  box-shadow: none;
+  font-size: 1.2em;
+  &:focus {
+    border-bottom-color: $color-pf-blue;
+    box-shadow: none;
+  }
+  &::-webkit-input-placeholder {
+    /* Chrome/Opera/Safari */
+    font-style: normal;
+  }
+
+
+  &::-moz-placeholder {
+    /* Firefox 19+ */
+    font-style: normal;
+  }
+
+  &:-ms-input-placeholder {
+    /* IE 10+ */
+    font-style: normal;
+  }
+
+  &:-moz-placeholder {
+    /* Firefox 18- */
+    font-style: normal;
+  }
+}
+
+input {
+  height: 30px;
+  &:active,
+  &:focus,
+  &:hover {
+    outline: none;
+    border-bottom-color: $color-pf-blue !important;
+  }
+}

@@ -9,6 +9,9 @@ body {
   font-family: $font-family-base;
   font-size: $font-size-base;
   overflow-x: hidden;
+  background: url('../images/osio.png');
+  background-size: cover;
+  background-position-y: 85px;
 }
 
 .dropdown-menu,
@@ -16,7 +19,8 @@ body {
   font-size: $font-size-base !important;
 }
 
-a {
+a,
+.btn-link {
   &:hover {
     text-decoration: none;
   }
@@ -29,29 +33,6 @@ a {
 
 .animate {
   transition: all .3s ease;
-}
-
-.form-control {
-  border: 0;
-  border-bottom: 1px solid $color-pf-white;
-  border-radius: 0;
-  box-shadow: none;
-  font-size: 1.2em;
-  &:focus {
-    border-bottom-color: $color-pf-blue;
-    box-shadow: none;
-  }
-}
-
-input {
-  height: 30px;
-}
-
-input:active,
-input:focus,
-input:hover {
-  outline: none;
-  border-bottom-color: $color-pf-blue !important;
 }
 
 .fa-flask {
