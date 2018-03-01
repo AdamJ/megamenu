@@ -2405,16 +2405,21 @@ body {
   display: flex;
   flex-direction: column;
   grid-template-columns: 100vw;
-  grid-template-rows: 75px 1fr 1fr 1fr 10px 1fr 1fr 10px 1fr 1fr 1fr;
-  grid-column-gap: 10px;
+  grid-template-rows: 1fr 1fr 1fr 10px 1fr 1fr 10px 1fr 1fr 1fr;
+  position: absolute;
+  right: 0;
+  left: 0;
   background-color: #4d5258;
   height: 100vh;
   color: #fff; }
   .mobile-footer--content_item {
     display: inline-flex;
+    align-items: center;
     margin-top: 15px;
     margin-bottom: 15px;
     padding-left: 10px; }
+    .mobile-footer--content_item .fa {
+      margin-right: 10px; }
   .mobile-footer--content_divider {
     background-color: #292e34;
     padding-top: 5px;
