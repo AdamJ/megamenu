@@ -10,7 +10,7 @@ var fs = require('fs');
 
 // Set the banner content
 var banner = ['/*!\n',
-  ' * https://www.adamjolicoeur.com/Megamenu\n',
+  ' * https://www.adamjolicoeur.com/megamenu\n',
   ' * <%= pkg.title %> v<%= pkg.version %>\n',
   ' * Copyright 2008-' + (new Date()).getFullYear(), ' <%= pkg.author %>\n',
   ' * Licensed under <%= pkg.license %>\n',
@@ -32,7 +32,7 @@ gulp.task('sass', function () {
 
 // Minify compiled CSS
 gulp.task('minify-css', ['sass'], function () {
-  return gulp.src('css/grayscale.css')
+  return gulp.src('css/site.css')
     .pipe(cleanCSS({
       compatibility: 'ie8'
     }))
@@ -100,5 +100,4 @@ gulp.task('serve', ['sass', 'minify-js'], function () {
   gulp.watch('**/*.html').on('change', browserSync.reload);
 });
 
-// Run everything
 gulp.task('default', ['sass', 'minify-css', 'minify-js']);
