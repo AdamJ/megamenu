@@ -1,0 +1,63 @@
+@import "../node_modules/patternfly/dist/sass/patternfly/_color-variables.scss";
+
+@import "fonts";
+@import "typography";
+@import "overrides";
+
+body {
+  font-family: $font-family-base;
+  font-size: $font-size-base;
+}
+.mobile-header {
+  display: grid;
+  grid-template-columns: 1fr 40px 40px;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  height: 75px;
+  background-color: $color-pf-black-200;
+  color: $color-pf-black-900;
+  .user-icon {
+    padding-left: 10px;
+  }
+}
+.mobile-footer--content {
+  display: flex;
+  flex-direction: column;
+  grid-template-columns: 100vw;
+  grid-template-rows: 75px 1fr 1fr 1fr 10px 1fr 1fr 10px 1fr 1fr 1fr;
+  grid-column-gap: 10px;
+  background-color: $color-pf-black-700;
+  height: 100vh;
+  color: $color-pf-white;
+  &_item {
+    display: inline-flex;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding-left: 10px;
+  }
+  &_divider {
+    background-color: $color-pf-black-900;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+  }
+}
+.mobile-footer {
+  &--bottom {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    justify-items: center;
+    align-items: center;
+    background-color: $color-pf-black-700;
+    height: 60px;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    color: $color-pf-black-500;
+    font-size: 1.7em;
+  }
+}

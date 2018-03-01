@@ -9,8 +9,11 @@ body {
   font-family: $font-family-base;
   font-size: $font-size-base;
   overflow-x: hidden;
+}
+.background-cover {
   background: url('../images/osio.png');
   background-size: cover;
+  background-repeat: no-repeat;
   background-position-y: 85px;
 }
 
