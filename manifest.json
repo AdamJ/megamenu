@@ -1,0 +1,9 @@
+{
+  "short_name": "megademo",
+  "name": "Mobile Mega Menu Demo",
+  "description": "A demo of the mobile menu that combines with the mega menu.",
+  "display": "standalone",
+  "orientation": "portrait",
+  "theme_color": "#030303",
+  "background-color": "#030303"
+}
