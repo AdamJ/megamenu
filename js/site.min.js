@@ -1,5 +1,5 @@
 /*!
- * https://www.adamjolicoeur.com/Megamenu
+ * https://www.adamjolicoeur.com/megamenu
  * Megamenu Examples v0.0.1
  * Copyright 2008-2018 Adam J. Jolicoeur
  * Licensed under none
