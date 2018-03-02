@@ -2501,7 +2501,7 @@ body {
   background-position-y: 85px; }
   @media (max-width: 900px) {
     .background-cover {
-      background: url("../images/osio-mobile.png");
+      background: none;
       background-size: cover;
       background-repeat: no-repeat; } }
 

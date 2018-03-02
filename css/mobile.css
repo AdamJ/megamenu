@@ -2390,6 +2390,8 @@ body {
 @media (min-width: 910px) {
   .mobile-header {
     display: none; }
+  .mobile-section {
+    display: none; }
   .mobile-footer {
     display: none; }
     .mobile-footer--content {
@@ -2409,9 +2411,12 @@ body {
     left: 0;
     height: 75px;
     background-color: #ededed;
-    color: #292e34; }
+    color: #292e34;
+    box-shadow: 2px 2px 5px #292e34; }
     .mobile-header .user-icon {
       padding-left: 10px; }
+  .mobile-section img {
+    width: 100%; }
   .mobile-footer--content {
     display: flex;
     flex-direction: column;
