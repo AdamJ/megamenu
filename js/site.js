@@ -1,5 +1,5 @@
 $("#mega-menu--dropdown").click(function() {
-  $("#megaMenu").toggle("slow", function() {
+  $("#megaMenu").toggle("fast", function() {
     // toggle the mega menu
   });
   $("#projectDetails").hide("fast", function () {
