@@ -30,3 +30,7 @@ $("#toggleNewFeature").click(function () {
   $("#newFeature").toggleClass("hide"); // remove the .hide class if applied
   $("#recentHighlights").toggleClass("hide"); // add the .hide class to show the newFeature block
 });
+
+$("#spaceMenuButton").click(function () {
+  $("#spaceMenu").toggleClass("hide-space-menu").toggleClass("show-space-menu");
+});
