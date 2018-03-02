@@ -15,6 +15,11 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   background-position-y: 85px;
+  @media (max-width: 900px) {
+    background: url('../images/osio-mobile.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
 }
 
 .dropdown-menu,
