@@ -16,6 +16,8 @@ $("#showProjectDetails").click(function() {
   $("#projectDetails").show("fast", function () {
     // show project details
   });
+  $(".project-name").removeClass("hide");
+  $(".generic-space").addClass("hide");
 });
 $("#hideProjectDetails").click(function () {
   $("#megaMenuBase").show("fast", function () {
@@ -24,6 +26,8 @@ $("#hideProjectDetails").click(function () {
   $("#projectDetails").hide("fast", function () {
     // show project details
   });
+  $(".project-name").addClass("hide");
+  $(".generic-space").removeClass("hide");
 });
 
 $("#toggleNewFeature").click(function () {
