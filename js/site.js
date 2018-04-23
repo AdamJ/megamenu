@@ -1,9 +1,10 @@
+// sets the notification drawer to slide right to left
 $("#notifications").click(function () {
   var effect = 'slide';
   var options = { direction: 'right' };
-
   $(".notification-drawer").toggle(effect, options);
 });
+
 $("#mega-menu--dropdown").click(function() {
   $("#megaMenu").toggle("fast", function() {
     // toggle the mega menu
@@ -12,6 +13,7 @@ $("#mega-menu--dropdown").click(function() {
     // hide project details
   });
   $("#megaMenuBase").show("fast", function () {
+    // show the mega menu
   });
 });
 
@@ -22,8 +24,8 @@ $("#showProjectDetails").click(function() {
   $("#projectDetails").show("fast", function () {
     // show project details
   });
-  $(".project-name").removeClass("hide");
-  $(".generic-space").addClass("hide");
+  $(".project-name").removeClass("hide"); // show the space name
+  $(".generic-space").addClass("hide"); // hide the placeholder space name
 });
 $("#hideProjectDetails").click(function () {
   $("#megaMenuBase").show("fast", function () {
@@ -32,8 +34,8 @@ $("#hideProjectDetails").click(function () {
   $("#projectDetails").hide("fast", function () {
     // show project details
   });
-  $(".project-name").addClass("hide");
-  $(".generic-space").removeClass("hide");
+  $(".project-name").addClass("hide"); // hide the space name
+  $(".generic-space").removeClass("hide"); // show the placeholder space name
 });
 
 $("#toggleNewFeature").click(function () {
