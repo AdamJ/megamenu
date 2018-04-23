@@ -1,3 +1,9 @@
+$("#notifications").click(function () {
+  var effect = 'slide';
+  var options = { direction: 'right' };
+
+  $(".notification-drawer").toggle(effect, options);
+});
 $("#mega-menu--dropdown").click(function() {
   $("#megaMenu").toggle("fast", function() {
     // toggle the mega menu

@@ -1,10 +1,13 @@
 var gulp = require('gulp');
 var sass = require('gulp-sass');
 var browserSync = require('browser-sync').create();
+// @ts-ignore
 var header = require('gulp-header');
+// @ts-ignore
 var cleanCSS = require('gulp-clean-css');
 var rename = require("gulp-rename");
 var uglify = require('gulp-uglify');
+// @ts-ignore
 var pkg = require('./package.json');
 var fs = require('fs');
 
@@ -31,6 +34,7 @@ gulp.task('sass', function () {
 });
 
 // Minify compiled CSS
+// @ts-ignore
 gulp.task('minify-css', ['sass'], function () {
   return gulp.src(['css/site.css',
                   'css/mobile.css'
@@ -79,27 +83,33 @@ gulp.task('copy', function () {
 });
 
 // ensure js finishes, reload browser
+// @ts-ignore
 gulp.task('js-watch', ['minify-js'], function (done) {
   browserSync.reload();
   done();
 });
 
 // ensure sass finishes, reload browser
+// @ts-ignore
 gulp.task('sass-watch', ['minify-css'], function (done) {
   browserSync.reload();
   done();
 });
 
 // Dev task with browserSync
+// @ts-ignore
 gulp.task('serve', ['sass', 'minify-js'], function () {
   browserSync.init({
     server: {
       baseDir: "./"
     }
   });
+  // @ts-ignore
   gulp.watch('js/*.js', ['js-watch']);
+  // @ts-ignore
   gulp.watch('sass/*.scss', ['sass-watch']);
   gulp.watch('**/*.html').on('change', browserSync.reload);
 });
 
+// @ts-ignore
 gulp.task('default', ['sass', 'minify-css', 'minify-js']);

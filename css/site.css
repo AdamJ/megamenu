@@ -2334,6 +2334,12 @@
   overflow: visible;
   clip: auto; }
 
+.notification-drawer {
+  position: fixed;
+  top: 88px;
+  right: 0;
+  display: none; }
+
 .navbar-inverse .navbar-nav > .open > a,
 .navbar-inverse .navbar-nav > .open > a:focus,
 .navbar-inverse .navbar-nav > .open > a:hover {
@@ -2405,6 +2411,8 @@
           border-left: 10px solid #393f44;
           border-top: 10px solid transparent;
           border-bottom: 10px solid transparent; }
+      .mega-menu--spaces-list .input-group input {
+        width: 235px; }
     .mega-menu--spaces-table_header {
       margin-top: 26px;
       font-size: 2em; }
@@ -2438,7 +2446,9 @@
         padding-left: 0; }
       .mega-menu--search .dropdown-menu {
         top: 25px !important;
-        left: 0 !important; } }
+        left: 0 !important; }
+      .mega-menu--search .input-group input {
+        color: #fff; } }
 
 h1 {
   font-size: 2em;
