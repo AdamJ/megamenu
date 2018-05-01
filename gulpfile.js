@@ -53,7 +53,7 @@ gulp.task('minify-css', ['sass'], function () {
 
 // Minify JS
 gulp.task('minify-js', function () {
-  return gulp.src('js/site.js')
+  return gulp.src(['js/site.js', 'js/site-space.js'])
     .pipe(uglify())
     .pipe(header(banner, {
       pkg: pkg

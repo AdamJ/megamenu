@@ -10,11 +10,77 @@ body {
   font-size: $font-size-base;
   overflow-x: hidden;
 }
-.background-cover {
-  background: url('../images/osio.png');
+.background-cover_home {
+  background: url('../images/HomeDashboard.png');
   background-size: cover;
   background-repeat: no-repeat;
-  background-position-y: 85px;
+  background-position-y: 38px;
+  @media (max-width: 900px) {
+    background: none;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
+.background-cover_spaceDashboard {
+  background: url('../images/SpaceDashboard.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-y: 38px;
+  @media (max-width: 900px) {
+    background: none;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
+.background-cover_spaceSettings {
+  background: url('../images/SpaceSettings.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-y: 7px;
+  @media (max-width: 900px) {
+    background: none;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
+.background-cover_backlog {
+  background: url('../images/Planner.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-y: 38px;
+  @media (max-width: 900px) {
+    background: none;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
+.background-cover_userSettings {
+  background: url('../images/UserSettings.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-y: 38px;
+  @media (max-width: 900px) {
+    background: none;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
+.background-cover_create {
+  background: url('../images/Create.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-y: 8px;
+  @media (max-width: 900px) {
+    background: none;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
+.background-cover_allSpaces {
+  background: url('../images/ViewAllSpaces.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-y: 38px;
   @media (max-width: 900px) {
     background: none;
     background-size: cover;

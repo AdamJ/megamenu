@@ -61,6 +61,9 @@ body {
       background-color: $color-pf-black-700;
       height: 100vh;
       color: $color-pf-white;
+      a {
+        color: $color-pf-white;
+      }
       &_item {
         display: inline-flex;
         align-items: center;
@@ -91,6 +94,9 @@ body {
       left: 0;
       color: $color-pf-black-500;
       font-size: 1.7em;
+      a {
+        color: $color-pf-black-500;
+      }
       .menu-item--action {
         &_home,
         &_dashboard,

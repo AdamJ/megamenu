@@ -2429,6 +2429,8 @@ body {
     background-color: #4d5258;
     height: 100vh;
     color: #fff; }
+    .mobile-footer--content a {
+      color: #fff; }
     .mobile-footer--content_item {
       display: inline-flex;
       align-items: center;
@@ -2455,6 +2457,8 @@ body {
     left: 0;
     color: #8b8d8f;
     font-size: 1.7em; }
+    .mobile-footer--bottom a {
+      color: #8b8d8f; }
     .mobile-footer--bottom .menu-item--action_home:hover, .mobile-footer--bottom .menu-item--action_dashboard:hover, .mobile-footer--bottom .menu-item--action_space:hover, .mobile-footer--bottom .menu-item--action_planner:hover, .mobile-footer--bottom .menu-item--action_create:hover {
       cursor: pointer; }
   .hide-space-menu {
